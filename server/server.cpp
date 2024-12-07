@@ -15,13 +15,7 @@ typedef server::message_ptr message_ptr;
 typedef std::vector<uint8_t> ArrayBuffer;
 
 void process_message(ArrayBuffer buffer) {
-    const uint8_t OP_PING = 0x00;
-    const uint8_t OP_HELLO = 0x01;
-    const uint8_t OP_ENTER_GAME = 0X02;
-    const uint8_t OP_LEAVE_GAME = 0x03;
-    const uint8_t OP_UPDATE_VIEW = 0x04;
-    const uint8_t OP_CLICK = 0x05;
-    const uint8_t OP_INPUT = 0x06;
+    uint8_t OP_PING = 0x00;uint8_t OP_HELLO = 0x01;uint8_t OP_ENTER_GAME = 0x02;uint8_t OP_LEAVE_GAME = 0x03;uint8_t OP_UPDATE_VIEW = 0x04;uint8_t OP_CLICK = 0x05;uint8_t OP_INPUT = 0x06;
     
     uint8_t op = buffer[0];
     
